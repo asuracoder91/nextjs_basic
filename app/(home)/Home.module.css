@@ -1,0 +1,23 @@
+.bookList {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 25px;
+}
+@media (max-width: 600px) {
+	.bookButton {
+		flex-basis: calc(100% - 20px);
+	}
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+	.bookButton {
+		flex-basis: calc(50% - 20px);
+	}
+}
+
+@media (min-width: 901px) {
+	.bookButton {
+		flex-basis: calc(33% - 20px);
+	}
+}
